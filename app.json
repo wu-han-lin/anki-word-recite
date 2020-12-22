@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/wordbook/wordbook",
+    "pages/profile/profile",
+    "pages/searchword/searchword",
+    "pages/recognizewords/recognizewords",
+    "pages/selfcheck/selfcheck",
+    "pages/listencheck/listencheck"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "Anki Word Recite",
+    "backgroundColor": "#f8f9fb",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#444",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/tabbar/home.png",
+        "selectedIconPath": "assets/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/searchword/searchword",
+        "text": "单词查询",
+        "iconPath": "assets/tabbar/search.png",
+        "selectedIconPath": "assets/tabbar/search-selected.png"
+      },
+      {
+        "pagePath": "pages/wordbook/wordbook",
+        "text": "单词卡组",
+        "iconPath": "assets/tabbar/wordbook.png",
+        "selectedIconPath": "assets/tabbar/wordbook-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "我的",
+        "iconPath": "assets/tabbar/profile.png",
+        "selectedIconPath": "assets/tabbar/profile-active.png"
+      }
+    ],
+    "position": "bottom"
+  },
+  "useExtendedLib": {
+    "kbone": true,
+    "weui": true
+  },
+  "sitemapLocation": "sitemap.json"
+}

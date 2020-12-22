@@ -1,0 +1,29 @@
+page {
+  background-color: #F8F8F8;
+}
+.controlBanner {
+  margin: 20rpx 25rpx;
+}
+.controlBanner .addWordDis {
+  background-color: #124DE5;
+}
+.controlBanner .addWordDis text{
+  color:  #ffffff;
+}
+
+.container {
+  margin-top: 15rpx;
+}
+.container .item{
+  border: 3rpx solid #F8F8F8;
+  border-radius: 15rpx;
+  padding: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 15rpx;
+  border-bottom: 5rpx solid #E9EAEC;
+  background-color: #FFFFFF;
+}
+.container .item text{
+  font-size: 40rpx;
+  font-family: 'Times New Roman';
+}

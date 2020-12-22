@@ -1,0 +1,63 @@
+.inputBanner{
+  display: flex;
+  align-items: center;
+  background-color: #F8F8F8;
+}
+.inputBanner .searchIcon {
+  width: 50rpx;
+  height: 50rpx;
+  margin: 20rpx;
+}
+.inputBanner input {
+  height: 80rpx;
+  margin: 20rpx;
+  width: 500rpx;
+  border-radius: 20rpx;
+  background-color: #fff;
+}
+.inputBanner .searchButton {
+  margin-right: 30rpx;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container {
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  border-bottom: #EBECED 3rpx solid;
+}
+.container .fromWord {
+  margin-top: 30rpx;
+  font-weight: 1000;
+  font-size: 60rpx;
+}
+.container .phonetic{
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  font-size: 40rpx;
+  display: flex;
+  align-items: center;
+}
+.container .phonetic image{
+  margin-left: 20rpx;
+  width: 45rpx;
+  height: 45rpx;
+}
+.container .toWord{
+  padding-bottom: 30rpx;
+  border-bottom: 3rpx solid #EBECED;
+}
+
+.container .webInterpretation {
+  padding-top: 20rpx;
+}
+.container .webInterpretation text {
+  font-size: 35rpx;
+  font-weight: 800;
+  color:#124DE5 ;
+}
+.container .webInterpretationItems {
+  padding: 10rpx;
+}

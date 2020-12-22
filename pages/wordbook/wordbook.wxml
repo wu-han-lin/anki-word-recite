@@ -1,0 +1,10 @@
+<view class="controlBanner">
+  <button class="addWordDis">
+    <text>添加单词</text>
+  </button>
+</view>
+<view class="container">
+  <view class="item" wx:for="{{showingWords}}" wx:key="key">
+    <text>{{showingWords[index]}}</text>
+  </view>
+</view>

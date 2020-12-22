@@ -1,0 +1,24 @@
+<swiper class="slides" autoplay="{{slides.length > 1}}" indicator-dots="{{slides.length > 1}}" indicator-color="#bcc0c9" indicator-active-color="#3a4861">
+  <swiper-item wx:for="{{slides}}" wx:key="id">
+    <navigator url="{{item.link}}">
+      <image src="{{item.image}}" mode="aspectFill"/>
+    </navigator>
+  </swiper-item>
+</swiper>
+<view class="gridsTitle">
+  <text>
+    单词复习
+  </text>
+</view>
+<view class="grids">
+  <navigator class="item" wx:for="{{grids}}" wx:key="id" url="{{grids[index].link}}">
+    <image src="{{item.icon}}"/>
+    <text>{{item.name}}</text>
+  </navigator>
+</view>
+
+<view class="startStudy">
+  <navigator url="">
+    <text>开始今日学习</text>
+  </navigator>
+</view>

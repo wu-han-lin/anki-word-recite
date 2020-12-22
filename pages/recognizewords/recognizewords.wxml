@@ -1,0 +1,15 @@
+<view class="currentWord">
+  <view class="word item">
+    <text>{{word}}</text>
+  </view>
+  <view class="wordPhonetic item">
+    <text>/{{wordPhonetic}}/</text>
+    <image src="../../assets/recognizeword/audio-blue.png" bindtap="bindAudioTapHandle"></image>
+  </view>
+</view>
+<view class="optionBanner">
+  <view class="option" style="background:{{background[index]}}"wx:for="{{options}}" wx:key="id" bindtap="bindOptionTapHandle" data-id="{{index}}">
+    <text>{{options[index].definition}}</text>
+    <image wx:if="{{checkIconShow[index]}}"  src="../../assets/recognizeword/error.png"></image>
+  </view>
+</view>

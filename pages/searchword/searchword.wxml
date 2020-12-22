@@ -1,0 +1,28 @@
+<view class="inputBanner">
+  <image src="../../assets/searchword/searchIcon.png" class="searchIcon item"></image>
+  <input type="text" class="input item" placeholder="  输入需要查询的单词" bindinput="wordInputHandle"/>
+  <text class="item searchButton" bindtap="searchWordButton">查询</text>
+</view>
+<view class="container">
+  <view class="basicMean">
+    <view class="fromWord item">
+      <text>{{currentWordInfo.query}}</text>
+    </view>
+    <view class="phonetic item"  wx:if="{{currentWordInfo}}">
+      <view class="phoneticValue">
+        <text>/{{currentWordInfo.basic.phonetic}}/</text>
+      </view>
+      <image src="../../assets/recognizeword/audio-blue.png" bindtap="bindAudioTapHandle"></image>
+    </view>
+    <view class="toWord item">
+      {{currentWordInfo.basic.explains}}
+    </view>
+  </view>
+  <view class="webInterpretation">
+    <text>网络释义</text>
+    <view class="webInterpretationItems" wx:for="{{currentWordInfo.web}}">
+      {{currentWordInfo.web[index].key}}
+      {{currentWordInfo.web[index].value}}
+    </view>
+  </view>
+</view>
