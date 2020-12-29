@@ -1,10 +1,6 @@
-
-// pages/index/index.js
+var serverUrl = 'http://127.0.0.1:5000/'
+var App = getApp()
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
     slides:[{
       image:'../../assets/slides/slides-1.png',
@@ -27,7 +23,7 @@ Page({
     {
       icon:'../../assets/grids/grid-2.png',
       name:'拼词',
-      link:'/pages/recognizewords/recognizewords'
+      link:'/pages/spellcheck/spellcheck'
     },
     {
       icon:'../../assets/grids/grid-3.png',
@@ -39,14 +35,15 @@ Page({
       name:'自检',
       link:'/pages/selfcheck/selfcheck'
     }
-  ]
+  ],
+    userInfo:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(App)
   },
 
   /**

@@ -1,1 +1,32 @@
-/* pages/selfcheck/selfcheck.wxss */
+Page {
+  background-color: #F8F8F8;
+}
+.wordContainer {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding:280rpx;
+  padding-bottom: 450rpx;
+}
+.wordContainer .word{
+  font-size: 70rpx;
+}
+
+.controlBanner {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.controlBanner .item {
+  font-size: 40rpx;
+  padding:40rpx 100rpx;
+  border-radius: 25rpx;
+  width: 120rpx;
+  background-color: #FEFEFE;
+}
+.controlBanner .canDo{
+  background-color: #9BAEC8;
+}
+.controlBanner .cantDo{
+  background-color: #D9E1E8;
+}

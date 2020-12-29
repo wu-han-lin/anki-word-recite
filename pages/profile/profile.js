@@ -9,5 +9,14 @@ Page({
     this.setData({
       userInfo: e.detail.userInfo
     })
+  },
+  bindButtonTapHandle:function(){
+    wx.request({
+      url: 'http://127.0.0.1:5000/addword',
+      type:'post',
+      success:function(data){
+        console.log(data)
+      }
+    })
   }
 })

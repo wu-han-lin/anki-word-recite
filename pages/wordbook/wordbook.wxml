@@ -1,10 +1,16 @@
 <view class="controlBanner">
   <button class="addWordDis">
-    <text>添加单词</text>
+    <text>更换词库</text>
   </button>
+  <navigator url="/pages/newwordbook/newwordbook">
+    <button class="addWordDis" bindtap="myNewWordBookHandle">
+      <text>我的生词本</text>
+    </button>
+</navigator>
 </view>
 <view class="container">
   <view class="item" wx:for="{{showingWords}}" wx:key="key">
-    <text>{{showingWords[index]}}</text>
+    <text>{{showingWords[index].content}}</text>
+    
   </view>
 </view>

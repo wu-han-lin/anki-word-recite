@@ -6,7 +6,9 @@
     "pages/searchword/searchword",
     "pages/recognizewords/recognizewords",
     "pages/selfcheck/selfcheck",
-    "pages/listencheck/listencheck"
+    "pages/listencheck/listencheck",
+    "pages/spellcheck/spellcheck",
+    "pages/newwordbook/newwordbook"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

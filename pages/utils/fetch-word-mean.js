@@ -11,22 +11,22 @@ var fetchWordMean =function(query) {
   var output
   //   wx.showLoading({ title: 'Loading...' })
     return new Promise((resolve, reject) => {
-    wx.request({
-        url: 'http://openapi.youdao.com/api',
-        type: 'post',
-        dataType: 'jsonp',
-        data: {
-          q:query,
-          appKey: appKey,
-          salt: salt,
-          from: 'en',
-          to: 'zh-CHS',
-          sign: sign,
-          signType: "v3",
-          curtime: curtime,
-        }, 
-        success:resolve,
-        complete: wx.hideLoading
+      wx.request({
+          url: 'https://openapi.youdao.com/api',
+          type: 'post',
+          dataType: 'jsonp',
+          data: {
+            q:query,
+            appKey: appKey,
+            salt: salt,
+            from: 'en',
+            to: 'zh-CHS',
+            sign: sign,
+            signType: "v3",
+            curtime: curtime,
+          }, 
+          success:resolve,
+          complete: wx.hideLoading
         // function(data){
         //   output = JSON.parse(data.data)
         // }

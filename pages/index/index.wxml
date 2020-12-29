@@ -11,7 +11,7 @@
   </text>
 </view>
 <view class="grids">
-  <navigator class="item" wx:for="{{grids}}" wx:key="id" url="{{grids[index].link}}">
+  <navigator class="item" wx:for="{{grids}}" wx:key="id" url="{{grids[index].link+'?openID='+userInfo.openid}}">
     <image src="{{item.icon}}"/>
     <text>{{item.name}}</text>
   </navigator>

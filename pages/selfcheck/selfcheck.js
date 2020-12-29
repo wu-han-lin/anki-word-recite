@@ -1,66 +1,40 @@
-// pages/selfcheck/selfcheck.js
+var App = getApp()
+var serverUrl = App.globalData.serverUrl
+var addWord = require('../utils/word-operation').addWord
+var wordlist = require('../../data/word-list').wordList
+var currentWordIndex = 0
+var fetchWordMean = require('../utils/fetch-word-mean').fetchWordMean
 Page({
-
-  /**
-   * 页面的初始数据
-   */
-  data: {
-
+  data:{
+    wordList:''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  onLoad(){
+    console.log(addWord)
+    this.setData({
+      wordlist : wordlist,
+      currentWord : wordlist[currentWordIndex]
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  bindCanDoTapHandle(){
+    currentWordIndex += 1
+    this.setData({
+      wordlist : wordlist,
+      currentWord : wordlist[currentWordIndex]
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  bindCantDoTapHandle(){
+    if(true){
+      // console.log(App.globalData.userInfo.openid)
+      addWord(serverUrl,this.data.currentWord.content,App.globalData.userInfo.openid)
+      .then((res)=>{
+        console.log(res)
+      })
+    }
+    currentWordIndex += 1
+    this.setData({
+      wordlist : wordlist,
+      currentWord : wordlist[currentWordIndex]
+    })
+    
   }
 })

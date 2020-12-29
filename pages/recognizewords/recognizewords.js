@@ -1,4 +1,3 @@
-
 var wordlist = require('../../data/vocabulary').wordList
 var wordlistWithMean = require('../../data/word-list').wordList
 var fetchWordMean = require('../utils/fetch-word-mean').fetchWordMean
@@ -55,7 +54,9 @@ Page({
   },
   bindOptionTapHandle:function(e){
     //此处有bug，多次点击后会莫名其妙报错 暂未找到原因
-    var currentOptionId = parseInt(e.target.dataset.id)
+    var currentOptionId = parseInt(e.currentTarget.dataset.id)
+    // console.log(this.data.options[currentOptionId])
+    // console.log(e)
     if(this.data.options[currentOptionId].definition===this.data.wordMean){
       //选对了的处理
       var background = this.data.background
@@ -78,7 +79,7 @@ Page({
       var background = this.data.background
       var checkIconShow = this.data.checkIconShow
       checkIconShow[currentOptionId] = true
-      background[currentOptionId] = '#EB3941'
+      background[currentOptionId] = '#FBD0D0'
       this.setData({
         background: background,
         checkIconShow:checkIconShow

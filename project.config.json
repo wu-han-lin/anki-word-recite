@@ -78,6 +78,41 @@
           "pathName": "pages/recognizewords/recognizewords",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "pages/selfcheck/selfcheck",
+          "pathName": "pages/selfcheck/selfcheck",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/listencheck/listencheck",
+          "pathName": "pages/listencheck/listencheck",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/profile/profile",
+          "pathName": "pages/profile/profile",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/spellcheck/spellcheck",
+          "pathName": "pages/spellcheck/spellcheck",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/profile/profile",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/newwordbook/newwordbook",
+          "pathName": "pages/newwordbook/newwordbook",
+          "scene": null
         }
       ]
     }

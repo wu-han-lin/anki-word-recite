@@ -1,4 +1,4 @@
-var userAllWordlist = require('../../data/vocabulary').wordList
+var userAllWordlist = require('../../data/word-list').wordList
 var defaultShowingWordsNumber = 20
 var showingWords = userAllWordlist.slice(0,defaultShowingWordsNumber)
 var loadWordNumber=10
@@ -13,5 +13,8 @@ Page({
     this.setData({
       showingWords:showingWords
     })
+  },
+  myNewWordBookHandle:function(){
+    
   }
 })

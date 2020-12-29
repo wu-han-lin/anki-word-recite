@@ -29,14 +29,16 @@
   border-bottom: #EBECED 3rpx solid;
 }
 .container .fromWord {
+  padding-left: 280rpx;
   margin-top: 30rpx;
   font-weight: 1000;
-  font-size: 60rpx;
+  font-size: 70rpx;
 }
 .container .phonetic{
+  padding-left: 280rpx;
   margin-top: 20rpx;
   margin-bottom: 10rpx;
-  font-size: 40rpx;
+  font-size: 50rpx;
   display: flex;
   align-items: center;
 }

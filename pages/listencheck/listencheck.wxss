@@ -1,1 +1,36 @@
-/* pages/listencheck/listencheck.wxss */
+Page {
+  background-color: #F8F8F8;
+  display: flex;
+  flex-direction: column;
+}
+.currentWord {
+  display: flex;
+  flex-direction: column;
+  padding-top: 200rpx;
+  padding-bottom: 150rpx;
+  margin: 0 auto 0 auto;
+}
+.currentWord .item{
+  justify-content: center;
+}
+
+.currentWord .wordPhonetic image{
+  margin-left: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.optionBanner .option{
+  background-color: #FFFFFF;
+  border-radius: 10rpx;
+  margin: 30rpx;
+  padding: 30rpx;
+}
+.optionBanner .option image{
+  margin-left: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+}
+.optionBanner .option text{
+  flex: 1;
+}

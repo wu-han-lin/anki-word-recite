@@ -12,7 +12,7 @@ page {
 }
 .gridsTitle {
   padding-left: 30rpx;
-
+  display: flex;
   height: 44px;
 }
 .gridsTitle text{

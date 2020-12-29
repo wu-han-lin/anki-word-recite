@@ -19,7 +19,7 @@
     </view>
   </view>
   <view class="webInterpretation">
-    <text>网络释义</text>
+    <text>相关释义</text>
     <view class="webInterpretationItems" wx:for="{{currentWordInfo.web}}">
       {{currentWordInfo.web[index].key}}
       {{currentWordInfo.web[index].value}}

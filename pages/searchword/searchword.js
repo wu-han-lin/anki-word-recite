@@ -15,7 +15,7 @@ Page({
         this.setData({
           currentWordInfo:res
         })
-         console.log(that.data.currentWordInfo)
+        //  console.log(that.data.currentWordInfo)
       })
       //测试代码 end
       

@@ -1,2 +1,14 @@
-<!--pages/selfcheck/selfcheck.wxml-->
-<text>pages/selfcheck/selfcheck.wxml</text>
+<view class="wordContainer">
+  <view class="word">
+    <text>{{currentWord.content}}</text>
+  </view>
+  <view class="phonetic">/{{currentWord.pron}}/</view>
+</view>
+<view class="controlBanner">
+  <view class="canDo item" bindtap="bindCanDoTapHandle">
+    <text>认识</text>
+  </view>
+  <view class="cantDo item" bindtap="bindCantDoTapHandle">
+     <text>不认识</text>
+  </view>
+</view>
